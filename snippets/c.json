@@ -1,0 +1,50 @@
+{
+  "C Main Boilerplate": {
+    "prefix": "cmain",
+    "body": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "#include <string.h>",
+      "",
+      "int main() {",
+      "  ${1:// Your code here}",
+      "  ",
+      "  return 0;",
+      "}"
+    ],
+    "description": "C main function boilerplate with common includes"
+  },
+  "C Main with Args": {
+    "prefix": "cmainargs",
+    "body": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "#include <string.h>",
+      "",
+      "int main(int argc, char *argv[]) {",
+      "  ${1:// Your code here}",
+      "  ",
+      "  return 0;",
+      "}"
+    ],
+    "description": "C main function with command line arguments"
+  },
+  "C Struct": {
+    "prefix": "cstruct",
+    "body": [
+      "typedef struct ${1:StructName} {",
+      "  ${2:// Members}",
+      "} ${1:StructName};"
+    ],
+    "description": "C struct template"
+  },
+  "C Function": {
+    "prefix": "cfunc",
+    "body": [
+      "${1:void} ${2:function_name}(${3:}) {",
+      "  ${4:// Function body}",
+      "}"
+    ],
+    "description": "C function template"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "C++ Main Boilerplate": {
+    "prefix": "cppmain",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "    ${1:// Your code here}",
+      "    ",
+      "    return 0;",
+      "}"
+    ],
+    "description": "C++ main function boilerplate with bits/stdc++.h"
+  },
+  "C++ Competitive Programming Template": {
+    "prefix": "cppcp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "#define ll long long",
+      "#define vi vector<int>",
+      "#define vll vector<long long>",
+      "#define pb push_back",
+      "#define mp make_pair",
+      "#define all(x) (x).begin(), (x).end()",
+      "",
+      "void solve() {",
+      "    ${1:// Solution code}",
+      "}",
+      "",
+      "int main() {",
+      "    ios_base::sync_with_stdio(false);",
+      "    cin.tie(NULL);",
+      "    ",
+      "    int t = 1;",
+      "    // cin >> t;",
+      "    while(t--) {",
+      "        solve();",
+      "    }",
+      "    ",
+      "    return 0;",
+      "}"
+    ],
+    "description": "C++ competitive programming template"
+  },
+  "C++ Class": {
+    "prefix": "cppclass",
+    "body": [
+      "class ${1:ClassName} {",
+      "private:",
+      "    ${2:// Private members}",
+      "    ",
+      "public:",
+      "    ${1:ClassName}() {",
+      "        ${3:// Constructor}",
+      "    }",
+      "    ",
+      "    ~${1:ClassName}() {",
+      "        ${4:// Destructor}",
+      "    }",
+      "    ",
+      "    ${5:// Public methods}",
+      "};"
+    ],
+    "description": "C++ class template"
+  }
+}
