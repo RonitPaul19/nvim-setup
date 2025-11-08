@@ -16,6 +16,6 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 3
 vim.opt.completeopt = "menu,menuone,noselect"
 vim.opt.clipboard = "unnamedplus"
