@@ -36,7 +36,6 @@ return {
     end
 
     dashboard.section.footer.val = footer()
-    
     -- Layout configuration
     dashboard.config.layout = {
       { type = "padding", val = 1 },
@@ -52,7 +51,6 @@ return {
 
     -- Disable folding on alpha buffer
     vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
-    
     -- Add keymaps for navigation in alpha
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "alpha",
