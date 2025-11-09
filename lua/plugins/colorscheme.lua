@@ -5,19 +5,13 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup({
-      flavour = "mocha", -- options: latte, frappe, macchiato, mocha
+      flavour = "mocha",
       transparent_background = true,
       styles = {
         comments = { "italic" },
         conditionals = { "italic" },
         functions = { "bold" },
         keywords = { "bold" },
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
       },
       integrations = {
         telescope = true,
@@ -27,7 +21,25 @@ return {
         gitsigns = true,
         treesitter = true,
       },
+      custom_highlights = function(colors)
+        return {
+          -- make telescope windows fully transparent
+          TelescopeNormal = { bg = "NONE" },
+          TelescopeBorder = { bg = "NONE" },
+          TelescopePromptNormal = { bg = "NONE" },
+          TelescopePromptBorder = { bg = "NONE" },
+          TelescopeResultsNormal = { bg = "NONE" },
+          TelescopeResultsBorder = { bg = "NONE" },
+          TelescopePreviewNormal = { bg = "NONE" },
+          TelescopePreviewBorder = { bg = "NONE" },
+          TelescopeTitle = { bg = "NONE" },
+          TelescopePromptTitle = { bg = "NONE" },
+          TelescopeResultsTitle = { bg = "NONE" },
+          TelescopePreviewTitle = { bg = "NONE" },
+        }
+      end,
     })
-    vim.cmd([[colorscheme catppuccin]])
+
+    vim.cmd.colorscheme("catppuccin")
   end,
 }
