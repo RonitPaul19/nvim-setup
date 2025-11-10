@@ -32,7 +32,7 @@ keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 
 -- Buffer navigation
-keymap.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next buffer" })
+keymap.set("n", "<leader>nb", "<cmd>bnext<CR>", { desc = "Next buffer" })
 
 -- Move lines
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
