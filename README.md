@@ -1,2 +1,2 @@
 "# nvim---setup" 
-a minimalist nvim setup that gets yout job done
+a minimalist nvim setup that gets your job done
