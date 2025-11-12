@@ -113,6 +113,7 @@ if vim.g.vscode then
     { 'n', '<leader>of', 'workbench.action.files.openFile' },
     { 'n', '<leader>rw', 'workbench.action.reloadWindow' },
     { 'n', '<leader>os', 'workbench.action.openSettingsJson' },
+    { 'n', '<leader>e', 'workbench.action.toggleSidebarVisibility' },
 
     -- Window management
     { 'n', '<leader>wv', 'workbench.action.splitEditor' },
