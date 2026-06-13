@@ -7,13 +7,8 @@ return {
     "rcarriga/nvim-notify",
   },
   config = function(_, opts)
-    require("noice").setup(opts)
-
-    vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "NoicePopup", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "NoicePopupBorder", { bg = "NONE" })
-
-    vim.api.nvim_set_hl(0, "NotifyBackground", { bg = "NONE" })
+    require("notify").setup({
+      background_colour = "NONE"
+    })
   end,
 }
