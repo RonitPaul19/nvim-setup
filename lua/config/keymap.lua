@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 
 vim.keymap.set('n', '<leader>s', '<cmd>w<CR>')
-vim.keymap.set('n', ';', ':')
 vim.keymap.set('x', 'p', [["_dP]])
 vim.keymap.set('n', 'U', '<C-r>')
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { silent = true })
