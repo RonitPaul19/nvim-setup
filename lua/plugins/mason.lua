@@ -19,6 +19,7 @@ return {
         "tailwindcss",
         "jsonls",
         "emmet_language_server",
+        "vue_ls",
         "bashls",
         "lua_ls",
       },

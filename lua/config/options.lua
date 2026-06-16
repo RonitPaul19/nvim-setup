@@ -37,7 +37,7 @@ opt.signcolumn = "yes"
 opt.updatetime = 250
 opt.timeoutlen = 300
 
-opt.completeopt = { "menu", "menuone", "noselect" }
+opt.completeopt = { "menuone", "noselect" }
 
 vim.api.nvim_set_hl(0, "YankHighlight", { bg = "#5f2fa4" })
 
