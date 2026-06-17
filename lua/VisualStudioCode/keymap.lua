@@ -62,10 +62,10 @@ local mappings = {
   { 'n', '<leader>os',  'workbench.action.openSettingsJson' },
 
   -- Window Management
-  { 'n', '<leader>wv',  'workbench.action.splitEditor' },
-  { 'n', '<leader>wh',  'workbench.action.splitEditorDown' },
-  { 'n', '<leader>ww',  'workbench.action.joinTwoGroups' },
-  { 'n', '<leader>wa',  'workbench.action.evenEditorWidths' },
+  { 'n', '<leader>sv',  'workbench.action.splitEditor' },
+  { 'n', '<leader>sh',  'workbench.action.splitEditorDown' },
+  { 'n', '<leader>sj',  'workbench.action.joinTwoGroups' },
+  { 'n', '<leader>se',  'workbench.action.evenEditorWidths' },
 
   -- open file explorer
   { 'n', '<leader>e',   'workbench.view.explorer' },
