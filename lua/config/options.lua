@@ -30,7 +30,7 @@ opt.backup = false
 opt.clipboard:append("unnamedplus")
 opt.isfname:append("@-@")
 opt.guicursor = ""
-opt.scrolloff = 8
+opt.scrolloff = 5
 
 opt.signcolumn = "yes"
 
