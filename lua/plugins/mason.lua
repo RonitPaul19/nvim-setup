@@ -21,6 +21,7 @@ return {
         "emmet_language_server",
         "bashls",
         "lua_ls",
+        "ts_ls",
       },
     },
   },

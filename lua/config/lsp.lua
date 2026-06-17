@@ -38,6 +38,35 @@ vim.lsp.config("html", {
   root_markers = { "package.json", ".git" },
 })
 
+vim.lsp.config("tailwindcss", {
+  cmd = { "tailwindcss-language-server", "--stdio" },
+  filetypes = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue", "svelte" },
+  root_markers = {
+    "tailwind.config.js",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "postcss.config.ts",
+    "package.json",
+    ".git",
+  },
+  settings = {
+    tailwindCSS = {
+      includeLanguages = {
+        vue = "html",
+        vuehtml = "html",
+        javascript = "javascript",
+        typescript = "typescript",
+      },
+    },
+  },
+})
+
+-- vim.lsp.config("cssls", {
+--   cmd = { "vscode-css-language-server", "--stdio" },
+--   filetypes = { "css", "scss", "less", "vue" },
+--   root_markers = { "package.json", ".git" },
+-- })
+
 vim.lsp.config("emmet_language_server", {
   cmd = { "emmet-language-server", "--stdio" },
   filetypes = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue", "xml" },
