@@ -10,34 +10,33 @@ return {
     ------------------------------------------------------------------
 
     dashboard.section.header.val = {
+      "                                                            ",
+      "                                                            ",
+      "                                                            ",
       "     ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗     ",
       "     ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║     ",
       "     ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║     ",
       "     ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║     ",
       "     ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║     ",
       "     ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝     ",
-      "                                                            ",
-      "                     ⚡Fast • Neovim ⚡                     ",
-      "                                                            ",
-      "────────────────────────────────────────────────────────────",
     }
 
     ------------------------------------------------------------------
     -- BUTTONS
     ------------------------------------------------------------------
 
-    local function button(sc, txt, keybind)
-      local b = dashboard.button(sc, txt, keybind)
-      b.opts.width = 35
-      return b
-    end
+    -- local function button(sc, txt, keybind)
+    --   local b = dashboard.button(sc, txt, keybind)
+    --   b.opts.width = 35
+    --   return b
+    -- end
 
     dashboard.section.buttons.val = {
-      button("e", "󰙅  Explorer", "<cmd>NvimTreeToggle<CR>"),
-      button("f", "󰱼  Find File", "<cmd>Telescope find_files<CR>"),
-      button("g", "󰍉  Live Grep", "<cmd>Telescope live_grep<CR>"),
-      button("r", "󱋡  Recent Files", "<cmd>Telescope oldfiles<CR>"),
-      button("q", "󰅚  Quit", "<cmd>qa<CR>"),
+      -- button("e", "󰙅  Explorer", "<cmd>NvimTreeToggle<CR>"),
+      -- button("f", "󰱼  Find File", "<cmd>Telescope find_files<CR>"),
+      -- button("g", "󰍉  Live Grep", "<cmd>Telescope live_grep<CR>"),
+      -- button("r", "󱋡  Recent Files", "<cmd>Telescope oldfiles<CR>"),
+      -- button("q", "󰅚  Quit", "<cmd>qa<CR>"),
     }
 
     ------------------------------------------------------------------

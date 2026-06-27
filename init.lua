@@ -5,5 +5,6 @@ else
   require("config.options")
   require("config.keymap")
   require("config.lazy")
+  require("config.theme")
   require("config.lsp")
 end
