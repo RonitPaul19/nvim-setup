@@ -7,6 +7,8 @@ return {
       colors = {
         CursorLine = { bg = '#1e1e1e', fg = '#ffffff', underline = true }
       }
-    }
+    },
+    disable_background = true,
+    disable_float_background = true,
   },
 }
