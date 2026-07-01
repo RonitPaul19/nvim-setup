@@ -13,9 +13,6 @@ function M.load()
 
   pcall(vim.cmd, "colorscheme " .. theme)
 
-  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-  vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
-  vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 end
 
 M.load()
