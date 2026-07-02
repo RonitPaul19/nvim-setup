@@ -40,7 +40,10 @@ opt.timeoutlen = 300
 opt.completeopt = { "menuone", "noselect" }
 
 local pipe = "\\\\.\\pipe\\theme-switcher"
-pcall(vim.fn.serverstart, pipe)
+local ok = pcall(vim.fn.serverstart, pipe)
+if not ok then
+  vim.notify("theme-switcher pipe failed to start", vim.log.levels.WARN)
+end
 
 vim.api.nvim_set_hl(0, "YankHighlight", { bg = "#5f2fa4" })
 

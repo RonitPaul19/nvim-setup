@@ -1,1 +1,1 @@
-return "e-ink"
+return "rose-pine"
